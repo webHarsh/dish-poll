@@ -1,0 +1,107 @@
+.modal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.616);
+}
+
+.not-selected{
+    display: none;
+}
+
+.modal-box-rank{
+    
+    width: 500px;
+    background: white;
+    border-radius: 5px;
+}
+
+.rank-item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content:space-between;
+
+}
+
+.rank-item img{
+    height: 100px;
+    border-radius: 5px;
+}
+
+
+.modal-box{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    height: 400px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 25px 10px 10px 10px;
+    
+   
+
+}
+
+.rankbtn  {
+    line-height: 2;
+}
+
+.rank-change-btn{
+    padding: 7px;
+    font-weight: 500;
+    font-size: medium;
+    background-color: rgba(241, 135, 135, 0.466);
+    border-radius: 5px;
+    margin-left: 5px;
+    
+}
+
+
+
+.rank-change-btn:hover{
+    background-color: rgba(241, 135, 135, 0.795);
+    color:white;
+    cursor: pointer;
+}
+
+.modal-box .card-details{
+    margin-top: 15px;
+}
+
+.dish-card:hover{
+    background: rgba(139, 137, 137, 0.911);
+}
+
+.modal-box h3,p,h4{
+    margin: 0;
+    overflow: hidden;
+}
+
+.description{
+    margin-top: 10px;
+}
+
+
+
+.card-item{
+    
+}
+
+.modal-box img{
+    height: 200px;
+    border-radius: 5px;
+    
+    
+}
+
+@media (max-width:600px){
+    .modal-box-rank{
+        width: 90%;
+    }
+}

@@ -1,0 +1,68 @@
+.login-page-container{
+    background-image: url('../public//images/salad-2068217_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:white;
+} 
+
+
+
+.login-content{
+    height: 100%;
+    width: 100%;
+    background-color: #11111186;
+    color:#4b5c78;
+}
+
+.login-form{
+    background-color: white;
+    padding: 10px 30px;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content:space-evenly;
+    position: absolute;
+    right: 1.5em;
+    top: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px #ec9cac;
+}
+
+.login-form input{
+    
+    border: 1px solid rgb(122, 121, 121);
+    border-radius: 5px;
+    margin: 5px 0;
+    min-height: 30px;
+    height: 40px;
+    
+}
+
+.login-form input:focus{
+    outline: none;
+   border: 1px solid #ec9cac;
+}
+
+.login-btn{
+    cursor: pointer;
+    background-color: #e792a3;
+    
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .login-form{
+        border: none;
+        /* background-color: #d8d8d8a1; */
+        max-width: 80%;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}

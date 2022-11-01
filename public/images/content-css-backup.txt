@@ -1,0 +1,57 @@
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+.poll-result-tab{
+    width: 40%;
+    background-color: rgba(255, 0, 0, 0.322);
+    
+}
+
+.dish-tab{
+    width: 60%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(3, 3, 3, 0.5)), url('../public/images/dishback.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.dish-card{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    padding: 5px;
+    background:rgba(139, 137, 137, 0.568);
+    border-radius: 5px;
+    margin: 5px auto;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.dish-card:hover{
+    background: rgba(139, 137, 137, 0.911);
+}
+
+.dish-card h3,p{
+    margin: 0;
+    overflow: hidden;
+}
+
+.card-item{
+    
+}
+
+.dish-card img{
+    width: 100%;
+    border-radius: 5px;
+    opacity: 0.7;
+    
+}

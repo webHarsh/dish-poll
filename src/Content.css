@@ -1,0 +1,137 @@
+.container{
+    height: 100vh;
+    background: #f1878762;
+    
+}
+.content-container{
+    height: 100vh;
+    display: flex;
+}
+
+.vote{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    /* position: sticky; */
+}
+
+.vote-buttons{
+    cursor: pointer;
+    background-color: #5675d1;
+    border: 1px solid #ec9cac;
+    padding: 10px;
+    margin-right:5px;
+    border-radius: 7px;
+    width: 70px;
+    font-weight: bold;
+    color:white;
+}
+.vote-buttons:hover{
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.336);
+    color: black;
+}
+
+
+.poll-result-tab{
+    min-width: 30%;
+    background-color: #2f4858;
+    margin-right: 2px;
+    padding: auto;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.poll-result-tab-toggle{
+    display: none;
+}
+
+.result-dish-card{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 5px 0;
+    color:black;
+    font-weight: bold;
+    background-color: #b4dbf3;
+    margin-bottom: 5px;
+}
+
+.result-dish-card-selected{
+    background: #f18787b6;
+}
+
+.result-dish-card-selected::before{
+    content: 'Selected';
+    background-color: #f18787b6;
+    color:white;
+    position:absolute;
+    left: 20px;
+}
+
+.result-dish-card p{
+    font-size: small;
+}
+
+.result-dish-card img{
+    width: 30%;
+    border-radius: 5px;
+    
+}
+
+.card-selected{
+
+}
+
+
+
+.dish-tab{
+    width: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(3, 3, 3, 0.5)), url('../public/images/dishback2.jpg');
+    /* background: #2f4858; */
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+@media (max-width: 800px ){
+    .dish-card{
+        width: 45%;
+    }
+}
+
+@media (max-width:600px){
+    .content-container{
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px 0;
+    }
+    
+
+    .poll-result-tab{
+        min-height: 20vh;    
+        margin-bottom: 10px;   
+    }
+
+    .dish-tab{
+        
+    }
+
+    .dish-card{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .dish-card img{
+        height: 100px;
+        width: auto;
+    }
+}

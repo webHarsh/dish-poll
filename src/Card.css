@@ -1,0 +1,127 @@
+
+
+
+.dish-card{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    padding: 5px;
+    background:rgba(139, 137, 137, 0.747);
+    border-radius: 5px;
+    margin: 5px auto;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+    box-shadow: 0 1px 2px 2px rgba(255, 255, 255, 0.438);
+}
+
+.dish-card:hover{
+    background: rgba(139, 137, 137, 0.911);
+    box-shadow: 0 1px 3px 5px rgba(255, 255, 255, 0.438);
+}
+
+.dish-card-selected{
+    background: #f18787b6;
+    box-shadow: 0 0 0 0;
+}
+.dish-card-selected:hover{
+    background: #f18787b6;
+    box-shadow: 0 0 0 0;
+}
+
+.dish-card h3,p{
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+.card-item{
+    /* padding:10px; */
+}
+
+.dish-card img{
+    width: 100%;
+    border-radius: 5px;
+    opacity: 0.7;
+    
+}
+
+.card-btn{
+    position:absolute;
+    top: 20%;
+    color: rgba(255, 255, 255, 0.842);
+    border: 1px solid rgba(255, 145, 145, 0.568);
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px 10px;
+    background-color: rgba(241, 135, 135, 0.637);
+    cursor: pointer;
+    outline:0;
+    font-size: inherit;
+    font-family: inherit;
+    
+}
+
+.card-btn::after{
+    content: 'Select ';
+}
+
+.card-btn:hover{
+    background-color: rgba(241, 135, 135, 0.801);
+    box-shadow: 0 0 5px 2px rgba(241, 135, 135, 0.801);
+}
+
+
+.card-btn-selected{
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    position:absolute;
+    top: 25%;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px 10px;
+    background-color: #f18787e1;
+    
+}
+
+.card-btn-selected::after{
+    content: "Remove";
+}
+
+@media (max-width: 800px ){
+    .dish-card{
+        width: 45%;
+    }
+}
+
+@media (max-width:600px){
+    
+    
+    .dish-card{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .dish-card img{
+        height: 100px;
+        width: auto;
+    }
+
+    .card-btn{
+        left:5%;
+        top:40%;
+        max-width: 100px;
+    }
+    .card-btn-selected{
+        left:5%;
+        top:40%;
+        max-width: 100px;
+    }
+
+}
